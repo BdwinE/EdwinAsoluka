@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles/portfolio-style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        <title>
+        Contact Edwin  
+        </title>
+        <link rel="icon" href="../images/businessman.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+
+    <body>
+        <nav>
+            <div class = "menuButton">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="menu">
+                <a href=".././index.html">Home</a>
+                <a href="../pages/portfolio.html">Portfolio</a>
+                <a href="../pages/works.html">Works</a>
+                <a href="../pages/contact.html">Contact</a>
+            </div>
+        </nav>
+        <div class="PageWrapper">
+            <!--################### LEFT BLCK ####################-->
+            <div class="LeftBlock">
+                <p class="textVertical"> Contact </p>
+            </div>
+            <!--################### CONTENT BLCK ####################-->        
+            <div class = "Content">
+                <section class = "UpperSection"></section>
+                <section>
+                    <h2>Contact me</h2>
+                    <p style="line-height: 29px;">
+                        I currently open to job opportunites related to Computer Science; Webdev, Software Engrineering, or
+                        Software Development. I am an American citizan so I can work anywhere in the united states.
+                    </p>
+                </section>
+                <section>
+                    
+                    <form action="mailto:asolukaedwin@gmail.com" method="POST">
+                        <div class="contactGrid">
+                            <!--row1-->
+                            <div>
+                                <p>Name</p> <input type="text" name="name">
+                            </div>
+                            <div>
+                                <p>Email</p> <input type="email" name="email">
+                            </div>
+                            <!--row2-->
+                            <div class="msgAreaDiv">
+                                <p>Message</p><textarea name="message" rows="12"></textarea><br />
+                            </div>
+                            <input type="submit" name="submit" value="SEND">
+                        </div> <!--end contactGrid-->
+                    </form>
+                </section>
+                <section>
+                    <div class="SectionTop">
+                    </div>
+                </section> <!--end Courses section-->
+                <!--Proficiencies section-->
+                <section> 
+                    <div class="footer">
+                        <div class="links">
+                            <a href=".././index.html">Home</a>
+                            <a href="../pages/portfolio.html">Portfolio</a>
+                            <a href="../pages/works.html">Works</a>
+                            <a href="../pages/contact.html">Contact</a>
+                        </div>
+                        <p>Created by Edwin Asoluka. Icons from @flaticons</p>
+                    </div> <!--end footer-->
+                </section> <!--End Proficiencies section-->
+            </div> <!-- end content section-->
+            <!--################### RIGHT BLCK ####################-->
+            <div class="Sidebar">
+                <img class="profImg" src="../images/PFP.png">
+                <div class="downloadWrapper">
+                    <form id = "dwnlForm" method="get" action="../resume/resume.docx">
+                        <button type="submit">DOWNLOAD CV <img src="../images/dwnl_icon.svg"></button>
+                    </form>
+                </div>
+                <div class="Sidebar Info">
+                    <div class="contactBlck">
+                        <p>Email me:</p>
+                        <a href="mailto:asolukaedwin@gmail.com">asolukaedwin@gmail.com</a>
+                    </div>
+                    <div class="contactBlck">
+                        <p>Call or message me:</p>
+                        <p>+1 720 434 9998</p>
+                    </div>
+                    <div class="contactBlck">
+                        <p>LinkedIn:</p>
+                        <a href="https://www.linkedin.com/in/emeka-asoluka-65480b15b/" target="_blank">
+                            Edwin Asoluka
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end pageWrapper-->
+        
+        <script src="../scripts/menu-button.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

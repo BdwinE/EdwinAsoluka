@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles/portfolio-style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        <title>
+        Works - Edwin  
+        </title>
+        <link rel="icon" href="../images/businessman.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+
+    <body>
+        <nav>
+            <div class = "menuButton">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="menu">
+                <a href=".././index.html">Home</a>
+                <a href="../pages/portfolio.html">Portfolio</a>
+                <a href="../pages/works.html">Works</a>
+                <a href="../pages/contact.html">Contact</a>
+            </div>
+        </nav>
+        <div class="PageWrapper">
+            <!--################### LEFT BLCK ####################-->
+            <div class="LeftBlock">
+                <p class="textVertical"> Works </p>
+            </div>
+            <!--################### CONTENT BLCK ####################-->
+            <div class = "Content">
+                <section class = "UpperSection"></section>
+                <section>
+                    <h2>My Works</h2>
+                    <p style="line-height: 29px;">
+                        Click the title of each project to view them on gitHub<br><br>
+                    </p>
+                    <div class="workContainer">
+                        <h3><a href="https://github.com/BdwinE/LexicalAndSyntaxAnalyzer" target="_blank">Lexical and Syntax Analyzer</a></h3>
+                        <div class="threeColGrid">
+                            <p>Given a pascal(.pas) file with text this program performs a lexical and syntax analysis
+                            of the file and detemines if it's correct according to the grammar
+                            and language specified by the grammar.txt file.
+                            </p>
+                        </div>
+                    </div> <!--end workContainer-->
+                    <div class="workContainer">
+                        <h3><a href="https://github.com/BdwinE/GeneratePalindrome" target="_blank">Generate Palindrome</a></h3>
+                        <div class="threeColGrid">
+                            <p>Given an intereger number n, the program generates all sequence of numbers that are palindromes
+                            that sum up to that number n. Example: n=5, Generated Palindromes: 1 3 1, 1 1 1 1 1, 2 1 2, 5 As n increases
+                            the time needed to generate all palidromes increases exponitenally. This prgoram was written with the expectation
+                            that it should generated all palindromes for 40 in under 30 minutes, it's able to do it in 6.
+                            </p>
+                        </div>
+                    </div> <!--end workContainer-->
+                    <div class="workContainer">
+                        <h3>Granular Software Solutions</h3>
+                        <div class="threeColGrid">
+                            <p>
+                                Working together in a team of five to develope microservices and to demestrate the power of micro services to monolithical
+                                software companies in hope the will contract us to break their monolithic software into many microservices. The services we developed include
+                                a user service, messaging service, scheduling service and an API gateway.
+                            </p>
+                        </div>
+                    </div> <!--end workContainer-->
+                    <div class="workContainer">
+                        <h3>Portfolio - HTML, CSS</h3>
+                        <div class="threeColGrid">
+                            <p>
+                                This project is the website you're on right now. The goal
+                                of this project is to advertise my skills and myself as a software developer.
+                            </p>
+                        </div>
+                    </div> <!--end workContainer-->
+                    <div class="workContainer">
+                        <h3><a href="https://github.com/BdwinE/Interactive-Linked-Lists" target="_blank">Interactive Linked Lists</a></h3>
+                        <div class="threeColGrid">
+                            <p>
+                                This is a project that brought me alot of joy and stress in CS 2. It is an interactive linked list program, it lets you play around with different types of linked
+                                lists (singularly-linked, doubly-linked and singularly-circular linked lists). This project really stressed on me the importance of testing and project planning.
+                            </p>
+                        </div>
+                    </div> <!--end workContainer-->
+                </section>
+                <section>
+                    <div class="footer">
+                        <div class="links">
+                            <a href=".././index.html">Home</a>
+                            <a href="../pages/portfolio.html">Portfolio</a>
+                            <a href="../pages/works.html">Works</a>
+                            <a href="../pages/contact.html">Contact</a>
+                        </div>
+                        <p>Created by Edwin Asoluka. Icons from @flaticons</p>
+                    </div> <!--end footer-->
+                </section>
+                
+            </div> <!-- end content section-->
+            <!--################### RIGHT BLCK ####################-->
+            <div class="Sidebar">
+                <img class="profImg" src="../images/works-page-pfp.jpg">
+                <div class="downloadWrapper">
+                    <form id = "dwnlForm" method="get" action="../resume/resume.docx">
+                        <button type="submit">DOWNLOAD CV <img src="../images/dwnl_icon.svg"></button>
+                    </form>
+                </div>
+                <div class="Sidebar Info">
+                    <div class="contactBlck">
+                        <p>Email me:</p>
+                        <a href="mailto:asolukaedwin@gmail.com">asolukaedwin@gmail.com</a>
+                    </div>
+                    <div class="contactBlck">
+                        <p>Call me:</p>
+                        <p>+1 720 434 9998</p>
+                    </div>
+                    <div class="contactBlck">
+                        <p>LinkedIn:</p>
+                        <a href="https://www.linkedin.com/in/emeka-asoluka-65480b15b/" target="_blank">
+                            Edwin Asoluka
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end pageWrapper-->
+        
+        <script src="../scripts/menu-button.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

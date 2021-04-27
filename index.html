@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/portfolio-style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        <title>
+        Edwin's Portfolio - Home  
+        </title>
+        <link rel="icon" href="images/businessman.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="View Edwin's portfolio" />
+        <meta property="og:image" content="http://csportfolio.web.app/assets/myProPic.jpg" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+
+    <body>
+        <nav>
+            <div class = "menuButton">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="pages/portfolio.html">Portfolio</a>
+                <a href="pages/works.html">Works</a>
+                <a href="pages/contact.html">Contact</a>
+            </div>
+        </nav>
+        <div class="PageWrapper">
+            <!--################### LEFT BLCK ####################-->
+            <div class="LeftBlock">
+                <p class="textVertical"> Edwin A .</p>
+            </div>
+            <!--################### CONTENT BLCK ####################-->
+            <div class = "Content" >
+                <section class = "UpperSection">
+                    <div class="HeroIntro">
+                        <h1>
+                            Hi, My name is Edwin. I'm a senior in CompSci
+                            with a minor in Math, currently based in Denver, CO.
+                        </h1>
+                        <p>
+                            Having undergone the core courses in the field of computer science,
+                            I have a solid knowledge of algorithms, data structures, Operating Systems, Prob & Stats, etc.
+                            A complete list of courses I've taken can be found on the Portfolio page.
+                        </p>
+                        <div class = "twoButtonGrid">
+                            <button onclick="document.location='pages/portfolio.html'">VIEW PORTFOLIO</button> 
+                            <button onclick="document.location='pages/contact.html'">CONTACT</button>
+                        </div>
+                    </div>
+                                      
+                </section> <!-- end Upper section-->
+
+                <section data-aos="fade-left">
+                    <div class="SectionTop">
+                        <h2 class= "sectionTop Heading">About Me</h2>
+                        <div class="aboutGrid">
+                            <div class="Info Block" data-aos="fade-right">
+                                <p class="textGrey">
+                                    Originally born in Nigeria, I've always been intregred in computers and technology. Choosing to pursue that intrest I  went to Metropolitan State University
+                                    to aquire a degree in Computer Science. I am nearing the end of my last semester and would love to get my foot in the door.
+                                    I desire to learn more and truely make innovations in the field of computer science and technology.
+                                    I enjoy solving problems and learning new things. I am currently looing for the first job to kick of my carrier. Reach out to me at asolukaedwin@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+
+                <section data-aos="fade-right">
+                    <h2><a href="pages/works.html">Projects</a></h2>
+                </section>
+                <section>
+                    <div class="footer">
+                        <div class="links">
+                            <a href="index.html">Home</a>
+                            <a href="pages/portfolio.html">Portfolio</a>
+                            <a href="pages/works.html">Works</a>
+                            <a href="pages/contact.html">Contact</a>
+                        </div>
+                        <p>Created by Edwin Asoluka. Icons from @flaticons</p>
+                    </div> <!--end footer-->
+                </section>
+            </div> <!-- end content-->
+            <!--################### RIGHT BLCK ####################-->
+            <div class="Sidebar">
+                <img class="profImg" src="images/PFP.png">
+                <div class="downloadWrapper">
+                    <form id = "dwnlForm" method="get" action="resume/resume.docx">
+                        <button type="submit">DOWNLOAD CV <img src="/images/dwnl_icon.svg"></button>
+                     </form>
+                </div>
+                <div class="Sidebar Info">
+                    <div class="contactBlck">
+                        <p>Email me:</p>
+                        <a href="mailto:asolukaedwin@gmail.com">asolukaedwin@gmail.com</a>
+                    </div>
+                    <div class="contactBlck">
+                        <p>Call or message me:</p>
+                        <p>+1 720 434 9998</p>
+                    </div>
+                    <div class="contactBlck">
+                        <p>LinkedIn:</p>
+                        <a href="https://www.linkedin.com/in/emeka-asoluka-65480b15b/" target="_blank">
+                            Edwin Asoluka
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end pageWrapper-->
+        
+        <script src="scripts/menu-button.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
