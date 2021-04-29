@@ -49,11 +49,11 @@
     display: block;
     width: 100%;
 }
+
 body{
-    background-color: #2a2b20;
+    background-color: #FFFBBB;
     height: auto;
     width: auto;
-    color: #e8e6e3;
 }
 nav{
     position: fixed;
@@ -68,7 +68,7 @@ nav{
     border-color: #d9dbd0;
 }
 nav.active{
-    background-color: rgb(24, 26, 27);
+    background-color: #ffffff;
     transition: 0.55s;
 }
 .menuButton{
@@ -81,7 +81,7 @@ nav.active{
     height: 55px;
     width: 55px;
     border-radius: 50%;
-    background-color: #71a882;
+    border-color: #d9dbd0;
 }
 .menuButton.hover{
     border-style: solid;
@@ -98,7 +98,6 @@ nav.active{
     width: 0px;
     display: none;
     text-decoration: none;
-    color: #71a882;
 }
 .menu a.active{
     display:block;
@@ -140,7 +139,6 @@ body .PageWrapper{
     width: 10%;
     position: sticky;
     top: 0;
-    padding-top: 49px;
 }
 .PageWrapper .textVertical{
     transform: rotateZ(-90deg);
@@ -171,7 +169,6 @@ h1{
     font-weight: 400;
     font-size: 40px;
     margin-bottom: 16px;
-    color:#e8e6e3;
 }
 h2{
     font-family: 'Playfair Display',serif;
@@ -183,7 +180,7 @@ section{
     margin-bottom: 70px;
 }
 section h2{
-    color: rgb(200, 195, 188);
+    color:#333;
     font-family: 'Playfair Display';
     font-weight: normal;
     margin-bottom: 50px;
@@ -191,7 +188,6 @@ section h2{
 p{
     margin-bottom: 24px;
     line-height: 30px;
-    color:#e8e6e3;
 }
 section .HeroIntro{
     padding: 60px 0px 40px 0px;
@@ -246,7 +242,7 @@ div .twoButtonGrid{
     padding-bottom: 28px;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: rgb(50, 52, 38);
+    background-color: #e1e3d9;
     text-align: center;
 }
 
@@ -263,18 +259,17 @@ div .twoButtonGrid{
 }
 .Info p{
     line-height: 28px;
-    color:#e8e6e3;
+    color: rgb(99, 99, 99)
 }
 .aboutGrid{
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 18px;
     row-gap: 2px;
-    color:#e8e6e3;
 }
 .hobbies ul,.courses ul{
     font-family: 'IBM Plex Mono';
-    color: #e8e6e3;
+    color: #151515;
     margin-left: 18px;
     line-height: 28px;
     padding-top: 10px;
@@ -294,7 +289,7 @@ div .twoButtonGrid{
 #dwnlForm{
     display: flex;
     flex-direction: row;
-    background-color: #181a1b;
+    background-color: white;
     height: 100%;
     align-items: center;
     justify-content: center;
@@ -303,11 +298,6 @@ div .twoButtonGrid{
     font-family: 'IBM Plex Mono',serif;
     padding-left: 7px;
     padding-right: 7px;
-    background-color: rgb(24, 26, 27);
-}
-button {
-    border-color: #736b5e;
-    color: #e8e6e3;
 }
 #dwnlForm img{
     max-width: 20px;
@@ -332,8 +322,8 @@ button {
     margin-bottom: 5px;
 }
 .contactBlck a{
-    text-decoration: currentcolor;
-    color: rgb(151, 207, 169);
+    text-decoration: none;
+    color: #2e633f;
     font-size: 13px;
 }
 .proficiencyGrid{
@@ -344,7 +334,6 @@ button {
 }
 .proficiencyGrid h5, .proficiencyGrid progress{
     padding-top: 6%;
-    color: #e8e6e3;
 }
 /*--------- progress bar ----------*/
 progress[value]::-webkit-progress-bar{
@@ -382,6 +371,7 @@ progress[value]::-webkit-progress-value {
       background-color: #e1e3d9;
       margin-bottom: 30px;
       height: 40px;
+      width: 80%
   }
   input[type=submit]{
       background-color: #71a882;
@@ -391,14 +381,15 @@ progress[value]::-webkit-progress-value {
   textArea{
     background-color: #e1e3d9;
     margin-bottom: 35px;
+    width: 70%;
   }
   .msgAreaDiv{
-    column-span: 2;
+    grid-column: 1/span 2;
   }
 
   .workContainer{
       border-style: solid;
-      border-color: rgb(60, 65, 67);
+      border-color: #d9dbd0;
       padding-left: 15px;
       padding-top: 15px;
       padding-bottom: 15px;
@@ -424,27 +415,26 @@ progress[value]::-webkit-progress-value {
   .projectLinks a{
       margin-right: 10px;
   }
-
-  .progLangs2{
-    display: grid;
-    align-items: center;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: auto auto;
-    row-gap: 30px;
-    column-gap: 25px;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: rgb(50, 52, 38);
-    text-align: center;
-}
-
-.progLang p{
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-family: 'Playfair Display';
-
-}
+/*--------- footer styles ----------*/
+  .footer .links
+  {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 25px;
+  }
+  .links a{
+      margin-right: 6.8%;
+      text-decoration: none;
+  }
+  .footer p{
+      font-size: 10.8px;
+      color: #333;
+  }
+  .footer{
+      padding-top: 20px;
+      margin-bottom: -50px;
+      border-top-style: solid;
+      border-width: 1.9px;
+      border-color: #d9dbd0;
+      width: 80%;
+  }
